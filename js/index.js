@@ -22,7 +22,7 @@ if(navigator.onLine)
     
     
   fetch('https://api.covid19api.com/summary')
-  .then(result => result.json())
+  .then(result => result.json()) 
   .then(dataOfIndia => {
     
     for(i in dataOfIndia.Countries)
@@ -116,7 +116,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['New Confirmed', 'Total Confirmed', 'New Deaths', 'Total Deaths', 'New Recovered','TotalRecovered'],
+        labels: ['New Confirmed', 'Total Confirmed', 'New Deaths', 'Total Deaths', 'New Recovered','Total Recovered'],
         datasets: [{
             label: '# of Votes',
             data: arrayofdata,
@@ -267,7 +267,7 @@ var ctx = document.getElementById('myChart2').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['New Confirmed', 'Total Confirmed', 'New Deaths', 'Total Deaths', 'New Recovered','TotalRecovered'],
+        labels: ['New Confirmed', 'Total Confirmed', 'New Deaths', 'Total Deaths', 'New Recovered','Total Recovered'],
         datasets: [{
             label: '# of Votes',
             data: arrayofdata,

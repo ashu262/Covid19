@@ -67,7 +67,7 @@ z-index: 999;
 }
 
 .cText{
-    font-family: newf;
+    /* font-family: newf; */
     font-size: 65px;
     /* color: orangered; */
     color: white;
@@ -75,7 +75,7 @@ z-index: 999;
 }
 
 .Cret{
-    font-family: newf;
+    /* font-family: newf; */
     font-size: 55px;
     /* color: orangered; */
     color: white;
