@@ -81,7 +81,13 @@
         <h6><a href="https://dashboard.cowin.gov.in/" class="ctr" target="_blank">Register for Vaccination</a></h6>
 
       <hr>
+      <hr>
+      <h6 class="cases">Upcoming Features</h6>
 
+      <h6><a href="./html/upcomig.html" class="ctr">Covid-19 Dectection</a></h6>
+     
+
+    <hr>
         <h6 class="cases">Author</h6>
         
         <h6><a href="./html/auth.html" class="ctr">About</a></h6>
@@ -133,6 +139,11 @@
 
 <!-- graph for world Data...  -->
 
+<div class="container alert alert-info mt-2">
+
+  Due to API maintenance some data may be different from actual data. Our API service provider is working on it.
+</div>
+
 <div class="container graph">
 
     <h3 class="India">Summary Of  <span class="c">Cases</span></h3>
@@ -168,7 +179,7 @@
 
 <div class="container tables">
 
-  <marquee behavior="scroll" direction="left"  scrollamount="11" style="color: red; margin: 10px;">All the data has been taken from Covid19org site . For more details go to the official site of WHO</marquee>
+  <marquee behavior="scroll" direction="left"  scrollamount="11" style="color: red; margin: 10px;">All the data has been taken from Covid19org site. For more details go to the official site of WHO.</marquee>
   <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -245,6 +256,8 @@
         <h5>Maintain safe distance.</h5>
         <h5>Get vaccinated.</h5>
         <a href="https://dashboard.cowin.gov.in/" class="c" target="_blank" style="font-size: 28px;">Register For Vaccination</a>
+        <br>
+        <a href="./html/upcomig.html" class="c" style="font-size: 28px;">Upcomig features</a>
 </div>
   </div>
 
@@ -258,6 +271,23 @@
   <!-- /////////////////////////////////////////////////////  -->
 
 
+
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p><h1>Search Hospitals Near You</h1></p>
+   <!-- Autocomplete location search input --> 
+   <div class="form-group">
+  
+    <input type="text" class="form-control" id="search_input" placeholder="Type address..." />
+   </div>
+     </div>
+   </div>
+</div>
+
+<div class="container"  >
+  <iframe style = 'height : 300px;' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113848.06141248022!2d75.59048931640626!3d26.911367299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db67400000001%3A0x7b8ae3e01435dd92!2sRungta%20Hospital%20Jaipur%20(NABH%20Certified)%2024x7%20Emergency%20%26%20Trauma%20Services!5e0!3m2!1sen!2sin!4v1651949559283!5m2!1sen!2sin"  height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="300px"></iframe>
+</div>
   <!-- for the news and emergency contacts  -->
 
   <div class="container news">
@@ -428,14 +458,6 @@
 
 
 
-
-
-
-
-
-
-
-
 <!-- pdf for myth and fact  -->
 
 
@@ -535,5 +557,24 @@ var typed = new Typed('.element', {
         loop: true,
       });
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyC_ihar5jaeT9hN2i9V8QUYV7B5RKPQB1Q"></script>
+<script>
+  var searchInput = 'search_input';
+   
+function mine() {
+   var autocomplete;
+   autocomplete = new google.maps.places.Autocomplete((document.getElementById('search_input')), {
+    types: ['geocode'],
+    /*componentRestrictions: {
+     country: "USA"
+    }*/
+   });
+    
+   google.maps.event.addListener(autocomplete, 'place_changed', function () {
+    var near_place = autocomplete.getPlace();
+   });
+  };
 
+  document.getElementById('search_input').onload = mine()
+  </script>
 </html>
