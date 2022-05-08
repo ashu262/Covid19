@@ -9,22 +9,158 @@
 
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./../css/index.css">
 </head>
 <body>
+
+
+    <i class="fas fa-bars navs" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+   
+    </i>
     
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <div class="heads">
+            <img src="./.././images/world.svg" alt="" class="img-fluid" width="30px" height="30px" style="margin-right: 9px;">
+            <h5 class="offcanvas-title c" id="offcanvasExampleLabel">Novel Coronavirus</h5>
+          </div>
+      
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="stay">
+           Stay safe ,Stay Healthy
+    
+       
+           <hr>
+    
+          </div>
+    
+          <div class="menyItem" >
+    
+    
+            <h6 class="cases">Pages</h6>
+            
+            <h6><a href="./../index.html" class="ctr">Home</a></h6>
+            <hr>
+            <h6 class="cases">Covid Cases</h6>
+    
+            <h6><a href="./top.html" class="ctr">Top 5</a></h6> 
+    
+            <h6><a href="./world.html" class="ctr">World</a></h6> 
+    
+            <h6><a href="./india.html" class="ctr">India</a></h6> 
+    
+            <!-- <h6><a href="#" class="ctr">Detailed Analysis</a></h6>  -->
+    <hr>
+            <h6 class="cases">Important Links</h6>
+    
+            <h6><a href="https://www.mohfw.gov.in/" class="ctr">Covid-19 India</a></h6>
+            <h6> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="ctr">World Health Organization</a></h6>
+            <h6><a href="https://dashboard.cowin.gov.in/" class="ctr" target="_blank">Register for Vaccination</a></h6>
+    
+          <hr>
+    
+          <hr>
+          <h6 class="cases">Author</h6>
+        
+          <h6><a href="./auth.html" class="ctr">About</a></h6>
+           
+    
+          <hr>
+    
+     
+            <img src="./../images/designMenu.svg" alt="" class="img-fluid avtaer">
+    
+          </div>
+          <!-- <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    
+      <div class="container">
+          <h1 class="newsH text-center">Covid <span class="c">19</span></h1>
+      </div>
+
     <div class="container text-center mt-2">
+        <div class="container text-center mt-4 text-light" style="background : orangered"><h1>Future Works</h1></div>
         <img src="./../images/coronavirus.png" alt="" width="200px;" height="200px">
     </div>
 
-  <h1 class="container my-2" style="color: orangered">Covid 19 Dectection</h1>
 
-    <h6 class="container">
-        We will be presenting a web app for dectecting Covid 19 disease using X-rays with this project.
-        We will use the concept of <span style="color: orangered;">Convolutional Neural Network (CNN)</span>. We will use pytorch(python3) to implement this project. <br>
-        <button class="btn btn-outline-info mt-3" onclick="history.go(-1)">Go Back</button>
-    </h6>
 
-  
+    <div class="container">
+        <h1 class="container my-2" style="color: orangered">Covid 19 Detection Using CNN</h1>
+
+        <h6 class="container">
+            We will be presenting a web app for dectecting Covid 19 disease using X-rays with this project.
+            We will use the concept of <span style="color: orangered;">Convolutional Neural Network (CNN)</span>. We will use pytorch(python3) to implement this project. Using ML, We will check the diseases severity by using X Ray images for the detection and severity of the diseses. 
+        </h6>
+    </div>
+
+<hr class="container">
+<div class="container text-light text-center mt-4" style="background : orangered"><h1>Information About CNN</h1></div>
+    <div class="container mt-3">
+
+     <div class="row">
+         <div class="col-sm-6">
+            <h1 class="container" style = "color: orangered">What are convolutional neural networks?</h1>
  
+            <h6 class="container">To reiterate from the Neural Networks Learn Hub article, neural networks are a subset of machine learning, and they are at the heart of deep learning algorithms. They are comprised of node layers, containing an input layer, one or more hidden layers, and an output layer. Each node connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network.
+    
+                While we primarily focused on feedforward networks in that article, there are various types of neural nets, which are used for different use cases and data types. For example, recurrent neural networks are commonly used for natural language processing and speech recognition whereas convolutional neural networks (ConvNets or CNNs) are more often utilized for classification and computer vision tasks. Prior to CNNs, manual, time-consuming feature extraction methods were used to identify objects in images. However, convolutional neural networks now provide a more scalable approach to image classification and object recognition tasks, leveraging principles from linear algebra, specifically matrix multiplication, to identify patterns within an image. That said, they can be computationally demanding, requiring graphical processing units (GPUs) to train models. <br>
+         </div>
+         <div class="col-sm-6">
+            <img src="./../images/cnn.webp" alt="" class="img-fluid">
+        </div>
+     </div>
+            <!-- <button class="btn btn-outline-info mt-3" onclick="history.go(-1)">Go Back</button></h6> -->
+           
+    </div>
+    
+   
+
+    <div class="container mt-3 text-center">
+        <h1 class="container text-light text-center" style = "background: orangered">References</h1>
+        <a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia" class="text-center c">https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia</a> <br>
+        <a href="https://github.com/ieee8023/covid-chestxray-dataset" class="text-center c">https://github.com/ieee8023/covid-chestxray-dataset</a>
+    </div>
+
+    <div class="container-fluid foot mt-2">
+
+        <h6 class="v">General public health information</h6>
+        <h6 class="c">Novel Coronavirus</h6>
+    
+        <div class="morinfo">
+          <h6>Important links</h6>
+          <h6><a href="https://www.mohfw.gov.in/" class="ct">Covid-19 India</a></h6>
+          <h6> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="ct">World Health Organization</a></h6>
+          <h6><a href="https://dashboard.cowin.gov.in/" class="ct" target="_blank">Register for Vaccination</a></h6>
+    
+          <h6>Aurthor</h6>
+    
+         
+          <h6> <a href="mailto:ashutoshrai262@gmail.com" class="ct"><i class="fas fa-envelope ct"></i> Mail Us</a></h6>
+    
+          <h6> <a href="tel:+917860572192" class="ct"> <i class="fas fa-phone ct"></i> Contact Us</a></h6>
+          <h6> <a href="https://github.com/ashu262" target="_blank" class="ct"><i class="fa fa-github ct"></i> Contribution for this project</a></h6>
+    
+         <h6> <a href="#" class="ct"><i class="fas fa-arrow-circle-up"></i> Go To Top </a></h6>
+        </div>
+            <img src="./../images/design.svg" alt="" class="img-fluid" width="100px">
+    </div>
+    
 </body>
 </html>
